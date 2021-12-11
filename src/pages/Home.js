@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import BannerImage from "../assets/pizza.jpg"
 
 function Home() {
-    console.log("Hello From Home")
     return (
         <div className='home' style={{backgroundImage:`url(${BannerImage})`}}>
             <div className='headerContainer' >
