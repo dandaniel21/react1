@@ -1,0 +1,86 @@
+.footer {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.footerContact {
+    display: flex;
+    color: tomato;
+    gap: 290px;
+}
+
+.footerLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerLink h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.footerLink h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.footerLink .emailContact {
+    margin: 10px 0 0 0;
+    text-decoration: none;
+    color: inherit;
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.socialMedia {
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialMedia svg {
+    color: tomato;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.footer .copyright {
+    margin-top: 30px;
+    color: tomato;
+}
+
+@media only screen and (max-width: 850px) {
+    .footerContact {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footerLink h1 {
+        display: none;
+    }
+    
+    .footerLink h2 {
+        margin: 0;
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1024px) {
+    .footerContact {
+        gap: 150px;
+    }
+}

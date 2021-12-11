@@ -1,0 +1,116 @@
+.Navbar {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    position: fixed;
+    z-index: 1000;
+}
+
+.Navbar .leftSide {
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+}
+
+.Navbar .leftSide img {
+    width: 70px;
+    height: 70px;
+}
+
+.Navbar .leftSide .logoName {
+    color: tomato;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.Navbar .rightSide {
+    flex: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 100px;
+    gap: 20px;
+}
+
+.Navbar .rightSide button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.Navbar .rightSide a {
+    color: white;
+    font-size: small;
+    text-decoration: none;
+}
+
+.Navbar .rightSide a:hover {
+    color: tomato;
+}
+
+@media only screen and (max-width: 740px) {
+    .Navbar .leftSide {
+        padding-left: 30px;
+    }
+    
+    .hiddenLinks {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .hiddenLinks a {
+        text-decoration: none;
+        color: white;
+        font-size: small;
+    }
+
+    .hiddenLinks a:hover {
+        color: tomato;
+    }
+
+    .Navbar .rightSide a {
+        display: none;
+    }
+
+    .Navbar .rightSide {
+     padding-right: 30px;
+    }
+
+    .Navbar .rightSide button {
+        display: inherit;
+    }
+
+    .Navbar .rightSide svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .Navbar .leftSide#open img {
+        display: none;
+    }
+    
+    .Navbar .leftSide#open .logoName {
+        display: none;
+    }
+    
+    .Navbar .leftSide#close .hiddenLinks {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 740px) {
+    .Navbar .rightSide button {
+        display: none;
+    }
+
+    .hiddenLinks {
+        display: none;
+    }
+}
