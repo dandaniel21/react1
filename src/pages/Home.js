@@ -13,6 +13,8 @@ function Home() {
                 <Link to="/menu">
                     <button>OUR MENU</button>
                 </Link>
+                <p>Test</p>
+                <p>123123</p>
             </div>
         </div>
     );
