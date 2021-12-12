@@ -16,6 +16,7 @@
 
 .menu .menuTitle {
     font-size: 60px;
+    z-index: 0;
 }
 
 .menuList {
@@ -26,6 +27,7 @@
     justify-content: center;
     place-items: center;
     opacity: 0;
+    z-index: 0;
 }
 
 #fade {
@@ -71,11 +73,39 @@
     opacity: 0.5;
 }
 
+.menuItem .price {
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .menuItem p {
     margin: 0;
     margin-left: 20px;
     font-weight: bold;
     font-size: 30px;
+}
+
+.menuItem button {
+    display: flex;
+    width: 90px;
+    margin-right: 20px;
+    border-radius: 5px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(5, 128, 5);
+    color: white;
+}
+
+.cartContainer {
+    z-index: 1000;
+    position: fixed;
+    top: 70px;
+    width: 100%;
 }
 
 @media only screen and (max-width: 650px) {

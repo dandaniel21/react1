@@ -55,7 +55,7 @@
 
 @media only screen and (max-width: 740px) {
     .Navbar .leftSide {
-        padding-left: 30px;
+        padding-left: 5px;
     }
     
     .hiddenLinks {
@@ -80,7 +80,7 @@
     }
 
     .Navbar .rightSide {
-     padding-right: 30px;
+     padding-right: 5px;
     }
 
     .Navbar .rightSide button {
