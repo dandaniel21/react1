@@ -1,0 +1,202 @@
+.cart {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    right: -300px;
+    transition: 0.5s ease;
+}
+
+.cart#open {
+    right: 0;
+    opacity: 0.9;
+    transition: 0.5s ease;
+}
+
+.cart#open button .iconCart {
+    display: none;
+    transition: 0.5s ease;
+}
+
+.count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    font-size: 10px;
+    top: 5px;
+    left: 25px;
+    transition: 0.5s ease;
+}
+
+.cart#open .count {
+    display: none;
+    transition: 0.5s ease;
+}
+
+.cart#open .cartToggle {
+    position: absolute;
+    transition: 0.5s ease;
+}
+
+.cart#close {
+    right: -300px;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+.cart#close button .iconClose {
+    display: none;
+    transition: 0.5s ease;
+}
+
+.cart .cartToggle {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cart .cartToggle svg {
+    color: white;
+}
+
+.cartBox {
+    display: flex;
+    width: 300px;
+    height: 90vh;
+    background-color: black;
+    color: white;
+    flex-direction: column;
+}
+
+.cartHeader {
+    margin: 0;
+    text-align: center;
+}
+
+.cartHeader svg {
+    font-size: 50px;
+}
+
+.countItem {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: scroll;
+}
+
+.countItem#empty .notEmptyCart {
+    display: none;
+}
+
+.countItem#notEmpty .emptyCart {
+    display: none;
+}
+
+.emptyCart {
+    text-align: center;
+    margin-top: 200px;
+    font-size: x-large;
+}
+
+.cartTitle {
+    font-size: x-small;
+    margin: 0 20px;
+}
+
+.itemCartContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.listCart {
+    list-style: none;
+    width: 60%;
+    padding-left: 20px;
+}
+
+.btnCart {
+    display: flex;
+    gap: 10px;
+    padding-right: 20px;
+}
+
+.btnCart button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    color: white;
+}
+
+.line {
+    border: .5px solid white;
+}
+
+.grandTotal {
+    display: flex;
+    padding-left: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grandTotal .totalNum {
+    padding-right: 40px;
+    font-size: large;
+}
+
+.btnGrandTotal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.totalCartContainer .btnRemove {
+    margin-left: 20px;
+    background-color: crimson;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.totalCartContainer .btnBuy {
+    margin-right: 20px;
+    background-color: green;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.countItem#empty .totalCartContainer {
+    display: none;
+}
+
+@media only screen and (max-width: 425px) {
+    .cart#open {
+        width: 100%;
+    }
+
+    .cart#open .cartBox {
+        width: 100%;
+    }
+
+}

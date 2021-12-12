@@ -6,11 +6,13 @@ import Footer from './components/Footer';
 import Menu from './pages/Menu';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import { CartProvider } from "react-use-cart";
 
 
 function App() {
   return (
     <div className="App">
+      <CartProvider>
       <Router>
         <Navbar/>
         <Routes>
@@ -21,6 +23,7 @@ function App() {
         </Routes>
         <Footer/>
       </Router>
+      </CartProvider>
     </div>
   );
 }
