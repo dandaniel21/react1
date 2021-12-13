@@ -12,6 +12,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    z-index: 500;
 }
 
 .menu .menuTitle {
@@ -102,10 +103,10 @@
 }
 
 .cartContainer {
-    z-index: 1000;
-    position: fixed;
-    top: 70px;
+    position: absolute;
+    top: 0;
     width: 100%;
+    height: 100%;
 }
 
 @media only screen and (max-width: 650px) {
