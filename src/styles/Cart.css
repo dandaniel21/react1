@@ -4,6 +4,8 @@
     flex-direction: row;
     right: -300px;
     transition: 0.5s ease;
+    z-index: 2000;
+    height: 100%;
 }
 
 .cart#open {
@@ -72,7 +74,7 @@
 .cartBox {
     display: flex;
     width: 300px;
-    height: 90vh;
+    height: 100%;
     background-color: black;
     color: white;
     flex-direction: column;
@@ -163,7 +165,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 70px;
+    padding-bottom: 100px;
 }
 
 .totalCartContainer .btnRemove {
